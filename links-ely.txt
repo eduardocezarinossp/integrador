@@ -1,0 +1,3 @@
+https://youtu.be/02QPsf_FJpE - LINK DO VÍDEO
+https://stackoverflow.com/questions/49389768/change-arrow-colors-in-ng-bootstrap-carousel/49389989#49389989 - RESPOSTA STACK
+https://github.com/eduardocezarinossp/integrador - GIT
