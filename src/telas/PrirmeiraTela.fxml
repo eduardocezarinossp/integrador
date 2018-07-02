@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telas.PrimeiraTelaControlador">
+   <children>
+      <SplitPane dividerPositions="0.34448160535117056" prefHeight="300.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tabelaPessoa" layoutX="-2.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="colunaCodigo" prefWidth="75.0" text="Código" />
+                      <TableColumn fx:id="colunaCodigoMed" prefWidth="75.0" text="Código Med" />
+                      <TableColumn fx:id="colunaNome" prefWidth="75.0" text="Nome" />
+                      <TableColumn fx:id="colunaIdade" prefWidth="75.0" text="Idade" />
+                      <TableColumn fx:id="colunaEmail" prefWidth="75.0" text="Email" />
+                      <TableColumn fx:id="colunaTelefone" prefWidth="75.0" text="Telefone" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+               <HBox layoutX="55.0" layoutY="242.0" spacing="10.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <Button fx:id="btnNovo" layoutX="55.0" layoutY="242.0" mnemonicParsing="false" onAction="#cliqueNovaPessoa" text="Novo Paciente" />
+                        <Button fx:id="btnNovoMedico" layoutX="55.0" layoutY="242.0" mnemonicParsing="false" onAction="#cliqueNovoMedico" text="Novo Médico" />
+                        <Button fx:id="btnEditar" layoutX="115.0" layoutY="255.0" mnemonicParsing="false" onAction="#cliqueEditarPessoa" text="Editar" />
+                        <Button fx:id="btnExcluir" layoutX="203.0" layoutY="255.0" mnemonicParsing="false" onAction="#deletarPessoa" text="Excluir" />
+                     </children>
+                  </HBox>
+            </AnchorPane>
+          
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
